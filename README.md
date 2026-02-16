@@ -11,15 +11,18 @@ A rate-limited corn purchasing API with optional client UIs. Built for the Bob's
 
 **Business rule:** At most 1 corn per client per minute (sliding 60-second window).
 
+**Documentation:** [HLD.md](HLD.md) — High Level Design (architecture, data flow, design decisions).
+
 ## Project structure
 
 ```
 bobs-corn/
 ├── server/           # Express API (rate limiter, buy-corn, health)
 ├── client/           # React + Vite + Tailwind (port 5173)
-├── client-backbone/  # Backbone + Vite + Tailwind (port 5174)
+├── client-backbone/ # Backbone + Vite + Tailwind (port 5174)
 ├── package.json     # Root scripts: dev:server, dev:client, start:server
-└── README.md
+├── README.md
+└── HLD.md           # High Level Design
 ```
 
 ## Prerequisites
