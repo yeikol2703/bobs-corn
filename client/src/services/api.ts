@@ -1,6 +1,6 @@
 import type { BuyCornResult, BuyCornSuccessData, BuyCornErrorData } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL;
 const CLIENT_ID_KEY = 'bobs-corn-client-id';
 
 /**

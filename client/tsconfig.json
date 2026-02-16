@@ -11,7 +11,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "allowJs": true
+    "allowJs": true,
+    "types": ["vite/client"]
   },
   "include": ["src"]
 }
