@@ -4,7 +4,12 @@ import cors from 'cors';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({ origin: true }));
+app.use(cors({
+  origin: true, // reflect request origin (localhost, production frontend, etc.)
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'X-Client-Id'],
+  optionsSuccessStatus: 204,
+}));
 app.use(express.json());
 
 /**
@@ -29,7 +34,17 @@ function recordPurchase(clientId) {
   clientLastPurchase.set(clientId, Date.now());
 }
 
-// POST /api/buy-corn - Purchase corn 
+// Preflight for /api/buy-corn (ensure CORS headers on OPTIONS)
+app.options('/api/buy-corn', (req, res) => {
+  const origin = req.headers.origin || '*';
+  res.set('Access-Control-Allow-Origin', origin);
+  res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type, X-Client-Id');
+  res.set('Access-Control-Max-Age', '86400');
+  res.sendStatus(204);
+});
+
+// POST /api/buy-corn - Purchase corn
 app.post('/api/buy-corn', (req, res) => {
   const clientId = getClientId(req);
 

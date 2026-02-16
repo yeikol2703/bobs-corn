@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = import.meta.env?.VITE_API_URL ?? 'https://bobs-corn-nzu8.onrender.com/api';
 const CLIENT_ID_KEY = 'bobs-corn-client-id'; //Need to move to a config file
 
 /**
