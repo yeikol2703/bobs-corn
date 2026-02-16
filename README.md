@@ -164,3 +164,15 @@ src/
 ├── types/        # JSDoc types (BuyCornResult, BuyStatus, etc.)
 └── main.js       # Bootstrap
 ```
+
+## Screen shots
+
+### Desktop
+
+<img width="1880" height="905" alt="image" src="https://github.com/user-attachments/assets/a4dbe701-60d1-4154-b1de-6653ae75e829" />
+
+
+### Mobile
+
+<img width="372" height="808" alt="image" src="https://github.com/user-attachments/assets/2a9a3fef-2396-42e9-8f43-4ba9a59e26ad" />
+
