@@ -20,7 +20,7 @@ export function AppNav() {
           <a href="/" className="text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0" onClick={() => setMenuOpen(false)}>
             Shop
           </a>
-          <a href="#repository" className="text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0" onClick={() => setMenuOpen(false)}>
+          <a href="https://github.com/yeikol2703/bobs-corn" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0" onClick={() => setMenuOpen(false)}>
             Repository
           </a>
           <a href="#documentation" className="text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0" onClick={() => setMenuOpen(false)}>

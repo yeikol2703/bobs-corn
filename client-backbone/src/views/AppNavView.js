@@ -21,7 +21,7 @@ export const AppNavView = Backbone.View.extend({
       </a>
       <nav id="app-nav-menu" class="nav-menu md:flex-1 flex flex-col md:flex-row items-stretch md:items-center md:justify-center gap-0 md:gap-6 absolute md:relative left-0 right-0 md:left-auto md:right-auto top-full md:top-auto bg-white md:bg-transparent border-b md:border-b-0 border-gray-200 shadow-md md:shadow-none py-3 md:py-0 px-4 md:px-0 hidden md:flex" aria-label="Main">
           <a href="/" class="nav-link text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0">Shop</a>
-          <a href="#repository" class="nav-link text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0">Repository</a>
+          <a href="https://github.com/yeikol2703/bobs-corn" target="_blank" rel="noopener noreferrer" class="nav-link text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0">Repository</a>
           <a href="#documentation" class="nav-link text-gray-600 hover:text-gray-900 font-medium text-sm py-3 md:py-0 border-b border-gray-100 last:border-b-0 md:border-b-0">Documentation</a>
         </nav>
       <div class="flex items-center gap-1 sm:gap-2 shrink-0">
